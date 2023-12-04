@@ -61,16 +61,34 @@ body {
     color: #d67979;
 }
 
+
+@media (max-width: 767px) {
+    .navbar-brand {
+        font-size: 25px;
+        padding-left: 15px;
+    }
+    
+    .navbar-brand img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .navbar-nav {
+        font-size: 15px;
+    }
+
+}
+
 /* BODY */
 .container-body {
     max-width: 100%;
     height: auto;
 }
 
+
 /* FOOTER */
 
 footer {
-    position: fixed;
     bottom: 0;
     width: 100%;
     background-color: #EDBFC2;
@@ -105,6 +123,7 @@ footer {
 
     .footer-navbar-brand {
         font-size: 14px;
+        justify-content: center;
     }
 
     .footer-link {
@@ -126,6 +145,14 @@ footer {
     }
 }
 
+@media (max-width: 375px) {
+    footer {
+        position: relative;
+    }
+
+}
+
+
 /* DROPDOWN */
 
 .dropdown-menu {
@@ -134,28 +161,34 @@ footer {
 
 .dropdown-item {
     font-family: 'Open Sans';
+    color: #000;
 }
 
-
-.dropdown-item:hover {
-    color: #d67979;
-}
-
+.dropdown-item:hover,
 .dropdown-item:active {
     color: #d67979;
+    background-color: transparent; 
+}
+
+@media (max-width: 767px) {
+    .dropdown-item {
+        font-size: 15px;
+    }
+    
 }
 
 /* INDEX */
 
-.welcome {
-    font-size: 100px;
-}
 
 .index-row{
     padding-top: 20px;
     padding-bottom: 50px;
     padding-left: 50px;
     padding-right: 50px;
+}
+
+.index-container{
+    padding-bottom: 120px;
 }
 
 .promociones-h1 {
@@ -165,15 +198,26 @@ footer {
     letter-spacing: 0px;
 }
 
+
+.index-image {
+    max-width: 100%;
+    height: auto;
+}
+
 .index-image-promociones {
     max-width: 100%;
     height: auto;
 }
 
 @media (max-width: 767px) {
-    
-    .welcome {
-        font-size: 50px;
+    .index-image {
+        width: auto;
+        height: 100px;
+    }
+
+    .index-image-promociones {
+        width: auto;
+        height: 200px;
     }
 
     .promociones-h1 {
@@ -270,6 +314,14 @@ footer {
     }
 }
 
+@media (min-width: 992px) {
+    .queques-image:hover {
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
+}
+
 /* REPOSTERIA */
 
 .reposteria-h1 {
@@ -282,7 +334,7 @@ footer {
 
 .reposteria-image {
     max-width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 
@@ -290,6 +342,7 @@ footer {
     padding-bottom: 20px;
     padding-left: 50px;
     padding-right: 50px;
+    height: 100%;
 }
 
 @media (max-width: 767px) {
@@ -394,4 +447,46 @@ footer {
         width: 100px; 
         height: 35px;        
     }
+}
+
+.flip-box {
+    background-color: transparent;
+    width: 16rem;
+    height: 16rem;
+    perspective: 1000px;
+}
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-box-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: black;
+}
+
+.flip-box-back {
+    background-color: gray;
+    color: white;
+    transform: rotateY(180deg);
 }
