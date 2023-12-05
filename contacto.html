@@ -10,7 +10,7 @@
     <title>Contacto</title>
 </head>
 
-<body>
+<body class="d-flex flex-column sticky-footer-wrapper min-vh-100">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -49,7 +49,7 @@
         </div>
     </nav>
     <!-- Contenido -->
-    <div class="container-fluid contacto">
+    <div class="container-fluid contacto flex-fill">
         <div class="row">
             <h1 class="contacto-h1 pb-2 text-center">Contacto</h1>
         </div>
@@ -82,11 +82,15 @@
     <footer class="text-dark text-center p-3">
         <div class="container-fluid pb-2">
             <div class="row align-items-center">
-                <div class="col-lg-4 text-center footer-col">
-                    <a class="navbar-brand d-flex align-items-center text-dark footer-navbar-brand"
+                <div class="col-lg-4 d-flex justify-content-center footer-col">
+                    <a class="navbar-brand d-flex align-items-center text-dark footer-navbar-brand d-none d-lg-block"
                         href="#">
                         <img src="./assets/img/logo-gris.png" alt="Logo" class="image">
                         Un dulce especial
+                    </a>
+                    <a class="navbar-brand d-flex align-items-center text-dark footer-navbar-brand d-lg-none"
+                        href="#">
+                        <img src="./assets/img/logo-gris.png" alt="Logo" class="image">
                     </a>
                 </div>
                 <div class="col-lg-8 text-center footer-col">

@@ -37,7 +37,7 @@ body {
 }
 
 .navbar-brand {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 55px;
     letter-spacing: 0px;
@@ -66,12 +66,12 @@ body {
         font-size: 25px;
         padding-left: 15px;
     }
-    
+
     .navbar-brand img {
         width: 30px;
         height: 30px;
     }
-    
+
     .navbar-nav {
         font-size: 15px;
     }
@@ -88,7 +88,6 @@ body {
 /* FOOTER */
 
 footer {
-    bottom: 0;
     width: 100%;
     background-color: #EDBFC2;
 }
@@ -144,12 +143,6 @@ footer {
     }
 }
 
-@media (max-width: 992px) {
-    footer{
-        position: fixed;
-        bottom: 0;
-    }
-}
 /* DROPDOWN */
 
 .dropdown-menu {
@@ -164,27 +157,27 @@ footer {
 .dropdown-item:hover,
 .dropdown-item:active {
     color: #d67979;
-    background-color: transparent; 
+    background-color: transparent;
 }
 
 @media (max-width: 767px) {
     .dropdown-item {
         font-size: 15px;
     }
-    
+
 }
 
 /* INDEX */
 
 
-.index-row{
+.index-row {
     padding-top: 20px;
     padding-bottom: 50px;
     padding-left: 50px;
     padding-right: 50px;
 }
 
-.index-container{
+.index-container {
     padding-bottom: 120px;
 }
 
@@ -279,7 +272,7 @@ footer {
     padding-left: 60px;
 }
 
-.queque-row{
+.queque-row {
     padding-bottom: 30px;
     padding-left: 50px;
     padding-right: 50px;
@@ -298,7 +291,7 @@ footer {
         padding: 10px;
     }
 
-    .row{
+    .row {
         padding-bottom: 0;
     }
 
@@ -308,7 +301,7 @@ footer {
         text-align: center;
     }
 
-    .queque-row{
+    .queque-row {
         padding-bottom: 0;
         padding-left: 0;
         padding-right: 0;
@@ -317,7 +310,7 @@ footer {
 
 @media (min-width: 992px) {
     .queques-image:hover {
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         transform: scale(1.05);
         transition: 0.3s;
     }
@@ -333,17 +326,8 @@ footer {
     padding-left: 60px;
 }
 
-.reposteria-image {
-    max-width: 100%;
-    height: auto;
-}
-
-
-.reposteria-row{
+.reposteria-row {
     padding-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    height: 100%;
 }
 
 @media (max-width: 767px) {
@@ -353,22 +337,17 @@ footer {
         text-align: center;
     }
 
-    .reposteria-image {
-        max-width: 88%;
-        max-height: 88%;
-        padding: 0;
-    }
-
-    .row{
+    .row {
         padding-bottom: 0;
     }
 
-    .reposteria-row{
+    .reposteria-row {
         padding-bottom: 0;
         padding-left: 0;
         padding-right: 0;
     }
 }
+
 /* CONTACTO */
 
 .contacto {
@@ -388,39 +367,39 @@ footer {
     max-height: 400px;
 }
 
-.contacto-h2{
-    font-family:'Open Sans Regular';
+.contacto-h2 {
+    font-family: 'Open Sans Regular';
     font-size: 20px;
 }
 
 .custom-input {
     font-family: 'Open Sans';
-    border: 1px solid #ccc;   
-    border-radius: 30px;     
+    border: 1px solid #ccc;
+    border-radius: 30px;
     width: 800px;
-    height: 45px;           
-    padding-left: 10px;           
-    box-sizing: border-box; 
+    height: 45px;
+    padding-left: 10px;
+    box-sizing: border-box;
 }
 
 .custom-input-message {
     font-family: 'Open Sans';
-    border: 1px solid #ccc;   
-    border-radius: 30px;     
+    border: 1px solid #ccc;
+    border-radius: 30px;
     width: 800px;
-    height: 100px;  
-    padding-left: 10px;           
-    box-sizing: border-box;  
+    height: 100px;
+    padding-left: 10px;
+    box-sizing: border-box;
 }
 
 .custom-btn {
-    font-family:'Open Sans Regular';
-    background-color: #C55959;  
-    color: #fff;                      
-    border: 1px solid #ccc;              
-    border-radius: 15px;    
+    font-family: 'Open Sans Regular';
+    background-color: #C55959;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
     width: 150px;
-    height: 55px;        
+    height: 55px;
 }
 
 @media (max-width: 767px) {
@@ -434,73 +413,116 @@ footer {
         font-size: 13px;
     }
 
-    .contacto-h2{
-        font-family:'Open Sans Regular';
+    .contacto-h2 {
+        font-family: 'Open Sans Regular';
         font-size: 15px;
     }
 
     .custom-input {
-        height: 30px;           
+        height: 30px;
     }
-    
+
 
     .custom-input-message {
-        height: 50px;  
+        height: 50px;
+    }
+
+    .custom-btn {
+        width: 100px;
+        height: 35px;
+    }
+}
+
+.reposteria-image {
+    width: 250px;
+    height: 250px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    perspective: 1000px;
+}
+
+@media (max-width: 1200px) {
+    .reposteria-image {
+        width: 225px;
+        height: 225px;
     }
     
-    .custom-btn {
-        width: 100px; 
-        height: 35px;        
+    .flip-card {
+        width: 225px;
+        height: 225px;
     }
 }
 
-.reposteria-row{
-    height: 300px;
+
+@media (max-width: 992px) {
+    .reposteria-image {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .flip-card {
+        width: 180px;
+        height: 180px;
+    }
 }
 
-.flip-box {
-    background-color: transparent;
-    width: 100%;
-    height: 100%;
-    perspective: 1000px;
-  }
-  
-  .flip-box-inner {
+@media (max-width: 577px) {
+    .reposteria-image {
+        width: 175px;
+        height: 175px;
+    }
+    
+    .flip-card {
+        width: 175px;
+        height: 175px;
+    }
+}
+
+@media (max-width: 376px) {
+    .reposteria-image {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .flip-card {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 0.8s;
+    transition: transform 0.6s;
     transform-style: preserve-3d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-box:hover .flip-box-inner {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-box-front, .flip-box-back {
+}
+
+.flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .flip-box-front {
-    background-color: transparent;
-    color: black;
     height: 100%;
-  }
-  
-  /* Style the back side */
-  .flip-box-back {
-    height: auto;
-    background-color: grey;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: black;
     color: white;
     transform: rotateY(180deg);
-  }
+}
