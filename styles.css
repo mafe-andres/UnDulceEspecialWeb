@@ -235,6 +235,7 @@ footer {
 
 .p-nosotros {
     font-family: 'Open Sans';
+    font-size: 20px;
     max-width: 700px;
     max-height: 400px;
 }
@@ -434,16 +435,30 @@ footer {
 }
 
 .reposteria-image {
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
 }
 
 .flip-card {
     background-color: transparent;
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
     perspective: 1000px;
 }
+
+@media (max-width: 1400px) {
+    .reposteria-image {
+        width: 275px;
+        height: 275px;
+    }
+    
+    .flip-card {
+        width: 275px;
+        height: 275px;
+    }
+}
+
+
 
 @media (max-width: 1200px) {
     .reposteria-image {
