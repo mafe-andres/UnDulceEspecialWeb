@@ -54,8 +54,8 @@
             <h1 class="reposteria-h1 pb-2">Repostería</h1>
         </div>
         <div class="row reposteria-row text-center">
-            <div class="col-6 col-md-3 flip-col">
-                <div class="flip-box">
+            <div class="col-6 col-md-3">
+                <div class="flip-box flip-col">
                     <div class="flip-box-inner">
                       <div class="flip-box-front">
                         <img src="./assets/img/reposteria01.png" alt="cupcakes" class="reposteria-image">
@@ -67,8 +67,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-3 flip-col">
-                <div class="flip-box">
+            <div class="col-6 col-md-3">
+                <div class="flip-box flip-col">
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
                             <img src="./assets/img/reposteria02.png" alt="galletas" class="reposteria-image">
@@ -80,8 +80,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-3 flip-col">
-                <div class="flip-box">
+            <div class="col-6 col-md-3">
+                <div class="flip-box flip-col">
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
                             <img src="./assets/img/reposteria03.png" alt="budin" class="reposteria-image">
@@ -108,8 +108,8 @@
             </div>
         </div>
         <div class="row reposteria-row text-center">
-            <div class="col-6 col-md-3 flip-col">
-                <div class="flip-box">
+            <div class="col-6 col-md-3">
+                <div class="flip-box flip-col">
                     <div class="flip-box-inner">
                       <div class="flip-box-front">
                         <img src="./assets/img/reposteria05.png" alt="cupcakes" class="reposteria-image">
@@ -121,8 +121,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-3 flip-col">
-                <div class="flip-box">
+            <div class="col-6 col-md-3">
+                <div class="flip-box flip-col">
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
                             <img src="./assets/img/reposteria06.png" alt="galletas" class="reposteria-image">
@@ -134,8 +134,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-3 flip-col">
-                <div class="flip-box">
+            <div class="col-6 col-md-3">
+                <div class="flip-box flip-col">
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
                             <img src="./assets/img/reposteria07.png" alt="budin" class="reposteria-image">
